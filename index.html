@@ -7,24 +7,24 @@
 <body>
 
     <script>
-     var modelo = prompt("Digite o modelo do veiculo:");
-    var placa = prompt("Digite a placa do veiculo:");
-    var tipoCombustivel = prompt("Digite o tipo de combustivel (ETANOL ou GASOLINA):");
-    var valorLitro = parseFloat(prompt("Digite o valor do litro em reais:"));
+    let modelo = prompt("Digite o modelo do veiculo:");
+    let placa = prompt("Digite a placa do veiculo:");
+    let tipoCombustivel = prompt("Digite o tipo de combustivel (ETANOL ou GASOLINA):");
+    let valorLitro = parseFloat(prompt("Digite o valor do litro em reais:"));
     var quantidadeLitros = parseFloat(prompt("Digite a quantidade de litros abastecidos:"));
 
-    var valorTotal = valorLitro * quantidadeLitros;
-    var imposto = valorTotal * 0.25;
-    var dataHora = new Date().toLocaleString();
+    let valorTotal = valorLitro * quantidadeLitros;
+    let imposto = valorTotal * 0.25;
+    let dataHora = new Date().toLocaleString();
 
-    var relatorio = " *RELATORIO DE ABASTECIMENTO *\n\n" +
-     "Data e Hora do abastecimento -> " + dataHora + "\n" +
-     "Placa do Veiculo -> " + placa + "\n" +
-     "Tipo de Combustivel -> " + tipoCombustivel + "\n" +
-     "Valor do Litro -> R$ " + valorLitro.toFixed(2) + "\n" +
-      "Quantidade de litros abastecidos -> " + quantidadeLitros.toFixed(2) + "\n" +
-      "Valor Total a Pagar -> R$ " + valorTotal.toFixed(2) + "\n\n" +
-      "Observacao: Valor do Imposto = R$ " + imposto.toFixed(2) + " (25% do valor total do abastecimento)";
+    let relatorio = " *RELATORIO DE ABASTECIMENTO *\n\n" +
+    "Data e Hora do abastecimento -> " + dataHora + "\n" +
+    "Placa do Veiculo -> " + placa + "\n" +
+    "Tipo de Combustivel -> " + tipoCombustivel + "\n" +
+    "Valor do Litro -> R$ " + valorLitro.toFixed(2) + "\n" +
+    "Quantidade de litros abastecidos -> " + quantidadeLitros.toFixed(2) + "\n" +
+    "Valor Total a Pagar -> R$ " + valorTotal.toFixed(2) + "\n\n" +
+    "Observacao: Valor do Imposto = R$ " + imposto.toFixed(2) + " (25% do valor total do abastecimento)";
 
     alert(relatorio);
     </script>
